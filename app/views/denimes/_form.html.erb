@@ -1,0 +1,94 @@
+<%= form_for(@denime) do |f| %>
+          <div class="form-group">
+            <%= f.label :brand, 'ブランド名' %>
+            <%= f.text_field :brand, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :model, 'モデル名' %>
+            <%= f.text_field :model, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :boulder, '穿き込み頻度' %>
+            <%= f.text_field :boulder, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :washing, '洗濯の頻度' %>
+            <%= f.text_field :washing, class: 'form-control' %>
+          </div>
+          
+          <div class="form-group">
+            <%= f.label :valuation, '評価' %>
+            <%= f.text_field :valuation, class: 'form-control' %>
+          </div>
+          
+          <div class="form-group">
+            <%= f.label :comment, 'コメント' %>
+            <%= f.text_field :comment, class: 'form-control' %>
+          </div>
+          
+          <div class="form-group">
+            <%= f.label :price, '値段' %>
+            <%= f.text_field :price, class: 'form-control' %>
+          </div>
+          
+          <div class="form-group">
+            <%= f.label :day, '購入日' %>
+            <%= f.text_field :day, class: 'form-control' %>
+          </div>
+          
+          <div class="form-group">
+            <%= f.label :size, 'サイズ（ inch ）' %>
+            <select id="size" class="form-control">
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+              <option>31</option>
+              <option>32</option>
+              <option>33</option>
+              <option>34</option>
+              <option>35</option>
+              <option>36</option>
+              <option>37</option>
+              <option>38</option>
+              <option>39</option>
+              <option>40</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <%= f.label :weight, '生地の重さ（ ounce ）' %>
+            <select id="weight" class="form-control">
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+            </select>
+          </div>
+          
+          <div class="text-right">
+            <%= f.submit '登録する', class: 'btn btn-success' %>
+          </div>
+        <% end %>

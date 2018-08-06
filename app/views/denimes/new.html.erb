@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-xs-offset-2 col-xs-8">
+    <div class="panel panel-default">
+      <div class="panel-heading">新しいDENIMEの登録</div>
+      <div class="panel-body">
+        <%= render 'form', denime: @denime %>
+        <%= link_to 'マイページに戻る', user_path(current_user) %>
+      </div>
+    </div>
+  </div>
+</div>

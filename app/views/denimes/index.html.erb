@@ -1,0 +1,8 @@
+<h1>DENIME一覧</h1>
+
+<ul>
+  <% @denimes.each do |denime| %>
+    <li><%= denime.brand %></li>
+    <li><%= denime.price %></li>
+  <% end %>
+</ul>

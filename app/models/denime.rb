@@ -1,0 +1,7 @@
+class Denime < ApplicationRecord
+
+
+
+
+
+end
